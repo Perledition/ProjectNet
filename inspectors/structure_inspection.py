@@ -114,9 +114,3 @@ def dependencie_links(df):
                 links.append(create_link(influence, row[1].file))
 
     return links
-
-files = all_files('/Users/maximperl/PycharmProjects/Privat/DarkArts')
-data = project_to_data(files)
-data['dependencie'] = identify_connections(data)
-links = dependencie_links(data)
-print(links)
